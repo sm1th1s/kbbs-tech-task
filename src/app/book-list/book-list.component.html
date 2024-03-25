@@ -1,0 +1,24 @@
+
+<div class="book-list">
+    @if (showDesc) {
+        <div class="book-detail">
+            <app-book-desc 
+            [selectedBook]="selectedBook"
+            (closeDetail)="closeDetail()">
+        </app-book-desc>          
+        </div>
+
+    }
+
+    @if (books.length>0){
+        <h2>Books:</h2>
+        @for(book of books; track book.id){
+            <p (click)="loadDetails(book);" class="list-element">{{book.name}}</p>
+        }@empty{
+            Empty list of books
+        }
+    }
+
+</div> 
+
+<!-- (click)="loadMyChildComponent();" -->

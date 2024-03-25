@@ -1,0 +1,18 @@
+.list-element{
+    border: 1px black solid;
+    padding: 15px;
+    border-radius: 2px;
+    background-color: rgb(240, 240, 240);
+}
+.list-element:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 10px;
+    border: none;
+}
+
+.book-detail{
+    background: whitesmoke;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+

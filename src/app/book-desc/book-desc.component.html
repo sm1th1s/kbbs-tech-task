@@ -1,0 +1,12 @@
+@if (selectedBook){
+    <button (click)="onCloseDetail()" class="close-button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <p>Some additional information to help you decide which book you want to read.</p>
+
+    <p><strong>Book title:</strong> {{selectedBook.name}}</p>
+    <p><strong>Author:</strong> {{selectedBook.author}}</p>
+    <p><strong>Genre:</strong> {{selectedBook.genre}}</p>
+
+    <p class="blurb"><strong>Blurb:</strong> {{selectedBook.blurb}}</p>
+}
